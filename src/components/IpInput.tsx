@@ -66,7 +66,11 @@ export const IpInput = ({ setter }: Props) => {
   }
 
   return (
-    <form id="input-box" onSubmit={(e) => handleSubmit(e)}>
+    <form
+      id="input-box"
+      onSubmit={(e) => handleSubmit(e)}
+      aria-label="Form for IP/Domain input. Default is your IP."
+    >
       <input
         id="ip-input"
         placeholder={
@@ -74,6 +78,7 @@ export const IpInput = ({ setter }: Props) => {
         }
         onChange={(e) => setInput(e.target.value)}
         value={input}
+        aria-label="Input domain name or IP address"
       />
       <button id="submit-btn">{">"}</button>
     </form>

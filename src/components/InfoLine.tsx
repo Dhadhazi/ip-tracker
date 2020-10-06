@@ -9,30 +9,30 @@ type Props = {
 
 export const InfoLine = ({ ipaddress, location, timezone, isp }: Props) => {
   return (
-    <article id="ip-details">
+    <article id="ip-details" aria-label="Data about the inserted ip/domain.">
       <section>
-        <h1>IP ADDRESS</h1>
+        <h2>IP ADDRESS</h2>
         <h3>{ipaddress}</h3>
       </section>
       <div className="divider-div">
         <hr className="divider" />
       </div>
       <section>
-        <h1>LOCATION</h1>
+        <h2>LOCATION</h2>
         <h3>{location}</h3>
       </section>
       <div className="divider-div">
         <hr className="divider" />
       </div>
       <section>
-        <h1>TIMEZONE</h1>
+        <h2>TIMEZONE</h2>
         <h3>{timezone}</h3>
       </section>
       <div className="divider-div">
         <hr className="divider" />
       </div>
       <section>
-        <h1>ISP</h1>
+        <h2>ISP</h2>
         <h3>{isp}</h3>
       </section>
     </article>
