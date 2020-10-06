@@ -1,6 +1,8 @@
 ## IP Address Tracker
 A site where you can check any IP or Domain name (this case the server park) data. 
 
+Try it ouy: [https://iptracker.herokuapp.com/](https://iptracker.herokuapp.com/)
+
 
 ## Setup
 Get and [Ipify](https://www.ipify.org/) API key
