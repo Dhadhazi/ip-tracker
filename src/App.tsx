@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import { InfoLine } from "./components/InfoLine";
 import { IpInput } from "./components/IpInput";
+import { LeafletMap } from "./components/LeafletMap";
 
 function App() {
   const [data, setData] = useState<IpData>();
@@ -27,7 +28,9 @@ function App() {
         </main>
       </div>
       <div id="img-background"></div>
-      <div id="map-box"></div>
+      <div id="map-box">
+        {data ? <LeafletMap lat={data?.lat} lng={data?.lng} /> : "Loading..."}
+      </div>
     </div>
   );
 }
